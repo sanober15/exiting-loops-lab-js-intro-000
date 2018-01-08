@@ -13,8 +13,8 @@ function keepGoing(array, changeValue, skipValue){
   array.forEach((element) =>{
     if (element != skipValue) {
       keepGoing;
-    }
     element = changeValue
+  }
   });
   return array;
 }
