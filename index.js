@@ -11,7 +11,7 @@ return array;
 
 function keepGoing(array, changeValue, skipValue){
   array.forEach((element) =>{
-    if (element != skipValue) {
+    if (element === skipValue) {
       continue
   }
   element = changeValue;
