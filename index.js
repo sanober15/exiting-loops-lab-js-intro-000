@@ -6,5 +6,15 @@ function breakOut(array, changeValue, stopValue){
     array[i] = changeValue;
   }
 return array;
+}
 
+
+function keepGoing(array, changeValue, skipValue){
+  array.forEach((element) =>{
+    if (element != skipValue) {
+      keepGoing;
+    }
+    element = changeValue
+  });
+  return array;
 }
